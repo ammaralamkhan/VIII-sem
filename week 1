@@ -1,0 +1,123 @@
+WEEK 1
+
+Question 1: In your own words, explain Web Engineering.
+Ans: Web Engineering is the systematic application of software engineering principles to the design, development, deployment, and maintenance of web applications.
+It treats web systems as full-scale software products rather than simple web pages. Web Engineering focuses on understanding user requirements, designing efficient architectures, developing reliable code, testing for quality, and maintaining applications over time. It also emphasizes usability, accessibility, security, scalability, and performance, since web applications are highly interactive and used by large numbers of users.
+In short, Web Engineering ensures that web applications are built in a structured, reliable, and professional manner, making them easy to use, secure, and maintainable in a rapidly changing web environment
+The Web Engineering Process (Lifecycle) describes the structured stages followed to develop and maintain a web application efficiently. It typically includes the following phases:
+1.	Requirements Analysis
+Identifies user needs, system functions, and non-functional requirements such as performance, security, and usability.
+2.	Design
+Defines the system architecture, database structure, navigation flow, user interface, and content layout.
+3.	Development (Implementation)
+Involves coding the front end and back end, integrating databases, APIs, and other services.
+4.	Testing
+Ensures the application works correctly through functional, usability, performance, security, and compatibility testing.
+5.	Deployment
+Releases the web application to a live environment with proper server configuration and security settings.
+6.	Maintenance and Evolution
+Includes fixing bugs, updating content, improving performance, adding new features, and handling security updates.
+
+Question 2: Explore and list core technologies used in Web Engineering, including HTML, CSS, JavaScript, and PHP, and explain the role of each.
+Ans: 
+1. HTML (HyperText Markup Language)
+HTML is the standard markup language used to create and structure web pages. It defines the content and structure of a website by using tags and elements. HTML tells the browser what content to display, such as text, images, links, and forms.
+Role in Web Engineering:
+•	Creates the basic structure of web pages
+•	Defines headings, paragraphs, tables, forms, and multimedia
+•	Uses semantic elements to improve accessibility and SEO
+Example:
+A webpage’s layout with a header, navigation bar, main content, and footer is created using HTML.
+2. CSS (Cascading Style Sheets)
+CSS is used to control the visual appearance of a web page. It works alongside HTML by applying styles such as colors, fonts, spacing, and layouts. CSS ensures that websites look attractive and consistent across different devices.
+Role in Web Engineering:
+•	Styles text, images, and backgrounds
+•	Controls layout using Flexbox and Grid
+•	Makes websites responsive for mobile, tablet, and desktop screens
+•	Adds animations and visual effects
+Example:
+Using CSS to change font colors, align elements, and design a responsive layout.
+
+3. JavaScript
+JavaScript is a scripting language that enables interactivity and dynamic behavior on web pages. It runs in the user’s browser and allows websites to respond to user actions without reloading the page.
+Role in Web Engineering:
+•	Handles user events like clicks and keystrokes
+•	Validates forms on the client side
+•	Updates content dynamically (e.g., live search results)
+•	Communicates with servers using AJAX
+Example:
+Showing an alert message when a button is clicked or validating a form before submission.
+4. PHP (Hypertext Preprocessor)
+PHP is a server-side scripting language used to build dynamic websites. It runs on the server and processes data before sending the final HTML output to the browser.
+Role in Web Engineering:
+•	Processes form submissions
+•	Connects to and manages databases
+•	Handles user authentication and sessions
+•	Generates dynamic web content
+Example:
+Processing a login form and retrieving user data from a database.
+Summary Table
+Technology	Main Purpose	Runs On
+HTML	Structure and content	Browser
+CSS	Styling and layout	Browser
+JavaScript	Interactivity and logic	Browser
+PHP	Server-side processing	Server
+
+Question 3: Identify front-end and back-end technologies used in web development and give examples of each.
+Ans: Web development is commonly divided into front-end (client-side) and back-end (server-side) technologies. Here’s a clear breakdown with examples:
+1.	Front-End Technologies (Client-Side)
+These are responsible for what users see and interact with in their browsers.
+Core Technologies
+•	HTML (HyperText Markup Language)
+Structures web content (headings, paragraphs, forms, images).
+•	CSS (Cascading Style Sheets)
+Styles and layouts the website (colors, fonts, responsive design).
+•	JavaScript
+Adds interactivity and dynamic behavior (animations, form validation).
+Front-End Frameworks & Libraries
+•	React.js – Component-based UI library (by Meta)
+•	Angular – Full-featured front-end framework (by Google)
+•	Vue.js – Lightweight and flexible framework
+•	Bootstrap / Tailwind CSS – CSS frameworks for responsive design
+2.	Back-End Technologies (Server-Side)
+These handle data processing, business logic, authentication, and database communication.
+Programming Languages
+•	JavaScript (Node.js)
+•	Python (Django, Flask)
+•	Java (Spring, Spring Boot)
+•	PHP (Laravel)
+•	C# (.NET)
+Back-End Frameworks
+•	Express.js (Node.js)
+•	Django / Flask (Python)
+•	Spring Boot (Java)
+•	Laravel (PHP)
+Databases
+•	Relational Databases: MySQL, PostgreSQL, Oracle
+•	NoSQL Databases: MongoDB, Firebase, Redis
+Servers & APIs
+•	Web Servers: Apache, Nginx
+•	APIs: REST, GraphQL
+Front-End	Back-End
+HTML, CSS, JavaScript	Node.js, Python, Java, PHP
+React, Angular, Vue	Express, Django, Spring
+Bootstrap, Tailwind	MySQL, MongoDB
+
+Question 4: Explore popular web frameworks or platforms and write short notes on any two.
+Ans: Web frameworks and platforms are tools that help developers build, deploy, and manage web applications efficiently. They provide predefined libraries, structures, and components that simplify tasks such as handling requests, database interaction, security, and user interfaces. Among many available frameworks, Django and React are two widely used and popular ones.
+1. Django
+Django is a high-level Python-based web framework that enables rapid development of secure and scalable web applications. It follows the Model–View–Template (MVT) architectural pattern, which separates the data layer, business logic, and presentation layer. Django is designed to reduce development time by providing built-in features instead of requiring third-party tools.
+One of Django’s major strengths is its built-in admin interface, which allows developers to manage application data easily without writing extra code. It includes an Object-Relational Mapper (ORM) that allows interaction with databases using Python code instead of SQL queries. Django also emphasizes security by providing protection against common web vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).
+Django is commonly used for developing content management systems, e-commerce platforms, and data-driven websites. Popular websites like Instagram and Pinterest use Django due to its reliability and scalability.
+2. React
+React is a JavaScript-based front-end framework/library developed by Meta (Facebook) for building fast and interactive user interfaces. It is mainly used to create single-page applications (SPAs) where content updates dynamically without reloading the entire page. React follows a component-based architecture, meaning the UI is divided into small, reusable components.
+One of React’s key features is the Virtual DOM, which improves application performance by updating only the parts of the web page that change, rather than reloading the entire page. React also uses unidirectional data flow, making applications easier to debug and maintain. It supports modern JavaScript features and integrates well with other frameworks and tools.
+React is widely used for developing responsive and interactive web applications, dashboards, and mobile applications (through React Native). Companies like Facebook, Netflix, and Airbnb use React extensively.
+
+Question 5: Write a short note on the usage of web technologies in education, business or social platforms
+Ans: Web technologies play a vital role in modern education, business, and social platforms by enabling easy access to information, communication, and services.
+In education, web technologies support online learning through virtual classrooms, e-learning platforms, digital libraries, and learning management systems. Students and teachers can interact in real time, share resources, submit assignments, and access educational content from anywhere, making learning more flexible and inclusive.
+In business, web technologies help organizations manage operations, reach customers, and conduct online transactions. Websites, e-commerce platforms, cloud services, and digital marketing tools allow businesses to promote products, collaborate with teams remotely, and provide better customer support.
+On social platforms, web technologies enable people to connect, share content, and communicate globally through social networking sites, blogs, and messaging applications. These platforms encourage information sharing, community building, and social interaction in real time.
+Overall, web technologies enhance efficiency, connectivity, and accessibility across different fields, making them essential in today’s digital world.
+
