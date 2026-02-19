@@ -1,0 +1,127 @@
+ques 5
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first web page</title>
+</head>
+
+<body style="background-color:red;"  text="black">
+
+    <h1>Something about me </h1>
+   
+    <p>
+        Ammar alam khan naam hai mera ,hum khalilabad k hai 
+        kafi accha baccha hu
+        aligarh <b>2018</b><br> mai aaya tha lekin kuch kae nhi raha hu
+    </p>
+
+    <p>
+        hum computer science k student hai 
+        <b>GL2276</b> aur <u>22CABSA116</u>
+    </p>
+
+    <i>This text is italics</i><br>
+    <b>This text is bold</b><br>
+    <u>This text is underline</u>
+
+</body>
+</html>
+
+
+question 6
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Fruits and Vegetables</title>
+</head>
+<body style="background-color:rgba(255, 0, 0, 0.437);"  text="black">
+
+    <h2>1. List of Fruits:</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Guava</li>
+    </ul>
+
+    <h2>2. List of Vegetables:</h2>
+    <ul>
+        <li>Carrot</li>
+        <li>Cabbage</li>
+        <li>Spinach</li>
+    </ul>
+
+</body>
+</html>
+
+
+question 7
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Schedule</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 3px solid rgb(12, 0, 0);
+            padding: 7px;
+            text-align: center;
+        }
+        th {
+            background-color: #e3c4c4;
+        }
+    </style>
+</head>
+<body style="background-color:rgba(255, 0, 132, 0.437);"  text="black">
+
+<h2>Train Schedule</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Name of the Train</th>
+        <th rowspan="2">Place</th>
+        <th rowspan="2">Destination</th>
+        <th rowspan="2">Train No.</th>
+        <th rowspan="2">Fare</th>
+        <th colspan="2">Time</th>
+    </tr>
+    <tr>
+        <th >Arrival</th>
+        <th>Departure</th>
+    </tr>
+    <tr>
+        <td>Express Line</td>
+        <td>Delhi</td>
+        <td>Mumbai</td>
+        <td>12345</td>
+        <td>₹750</td>
+        <td>09:45 AM</td>
+        <td>10:00 AM</td>
+    </tr>
+    <tr>
+        <td>Super Fast</td>
+        <td>Chennai</td>
+        <td>Bangalore</td>
+        <td>23456</td>
+        <td>02:30 PM</td>
+        <td>₹450</td>
+        <td>02:30 PM</td>
+    </tr>
+    <tr>
+        <td>Poorva Expresss</td>
+        <td>Kolkata</td>
+        <td>Patna</td>
+        <td>12303</td>
+        <td>09:00 PM</td>
+        <td>₹600</td>
+        <td>09:00 PM</td>
+    </tr>
+</table>
+
+</body>
+</html>
