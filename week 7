@@ -1,1 +1,141 @@
+Ques 1
 
+import pandas as pd
+
+data =[10,20,30]
+
+df =pd.Series(data)
+print(df)
+data2={
+    "Weight" :[58 ,67 ,911],
+    "Name" :["Ahmed" ," Aakif","YAsh"]
+}
+
+df2=pd.DataFrame(data2, index=[1,2,3])
+print(df2.dtypes)
+print(df2)
+
+Ques:2
+import pandas as pd
+
+df = pd.read_csv(r"C:\Users\ACER\Desktop\Semester 8\week 7\data.csv")
+print(df)
+
+Ques3:
+import pandas as pd
+
+data ={
+    "A" :[10,20,30,40,50],
+    "B":[5,10,15,20,25],
+    "C" :[1,2,3,4,5],
+    "D" :[4,8,12,16,20]
+}
+
+df = pd.DataFrame(data)
+print(df,"\n")
+#1 Average of the second column
+avg = df.iloc[:,1].mean()
+print("Average of 2nd column : ",avg  )
+
+#2 Avg of first 5 rows and 3rd and 4th column
+avg2=df.iloc[:5,2:4].mean()
+print("Average of first 5 rows , columns 3 and 4 :\n",avg2)
+
+#3Row-wise sum
+row_sum=df.sum(axis=1)
+print("Row-Wise sum : ",row_sum)
+
+#4 MaX OF AVG VALUE IN A ROW
+row_sums= df.mean(axis=1)
+max_row = row_sums.max()
+print("Maximum of row-wise averages: ", max_row)
+
+Ques:4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Multiplication Table (1-10)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>x</th>
+                <!-- Table headers for numbers 1 to 10 -->
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JavaScript will insert rows here -->
+        </tbody>
+    </table>
+
+    <script>
+      const tbody=document.querySelector('tbody');
+
+      for(let i =1;i<=10;i++){
+         let row = '<tr>';
+         row += `<th>${i}</th>`;  //row header
+        for(let j=1;j<=10;j++){
+            row += `<td>${i * j}</td>`;
+        }
+        row+="</td>"
+        tbody.innerHTML +=row;
+      }
+    </script>
+
+
+
+
+</body>
+</html>
+
+Ques:5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Image Swap on Hover</title>
+</head>
+<body>
+    <h2>Hover to swap the car image</h2>
+
+    <img 
+        src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" 
+        alt="Car 1"
+        width="400"
+        onmouseover="this.src='https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg';"
+        onmouseout="this.src='https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg';"
+    >
+
+</body>
+</html>
