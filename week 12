@@ -1,1 +1,120 @@
+xml code :
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<students>
+
+  <student id="101">
+    <name>Amit</name>
+    <course>BCA</course>
+    <marks>85</marks>
+  </student>
+
+  <student id="102">
+    <name>Riya</name>
+    <course>BSc</course>
+    <marks>90</marks>
+  </student>
+
+  <student id="103">
+    <name>Rahul</name>
+    <course>BCom</course>
+    <marks>78</marks>
+  </student>
+
+</students>
+
+Ques
+12(a):
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+
+data = load_iris()
+X = data.data
+y = data.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model = LogisticRegression(max_iter=200)
+model.fit(X_train, y_train)
+
+pred = model.predict(X_test)
+print (X)
+print (y)
+print(pred)
+
+Ques 2:
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
+
+data = load_iris()
+X = data.data
+y = data.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model = LogisticRegression(max_iter=200)
+model.fit(X_train, y_train)
+
+pred = model.predict(X_test)
+
+cm = confusion_matrix(y_test, pred)
+acc = accuracy_score(y_test, pred)
+pre = precision_score(y_test, pred, average='macro')
+rec = recall_score(y_test, pred, average='macro')
+f1 = f1_score(y_test, pred, average='macro')
+
+print(cm)
+print(acc, pre, rec, f1)
+
+Ques 3:
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+
+data = load_iris()
+X = data.data
+y = data.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+m1 = LogisticRegression(max_iter=200)
+m2 = DecisionTreeClassifier()
+m3 = KNeighborsClassifier()
+
+m1.fit(X_train, y_train)
+m2.fit(X_train, y_train)
+m3.fit(X_train, y_train)
+
+print(m1.score(X_test, y_test))
+print(m2.score(X_test, y_test))
+print(m3.score(X_test, y_test))
+
+Ques 4:
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<students>
+  <student>
+    <name>Yash</name>
+    <course>BCA</course>
+    <marks>10</marks>
+  </student>
+  <student>
+    <name>Ahmed</name>
+    <course>BCA</course>
+    <marks>20</marks>
+  </student>
+  <student>
+    <name>Zaid</name>
+    <course>BCA</course>
+    <marks>90</marks>
+  </student>
+</students>
 
