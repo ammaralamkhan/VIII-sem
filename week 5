@@ -1,0 +1,80 @@
+Ques1:
+import numpy as np
+
+arr=np.array([[1,2,3,4],[5,6,7,8]])
+
+print("Array: ")
+print(arr.shape)
+print(arr.size)
+print(arr.dtype)
+print(arr+5)
+
+Ques2:
+import numpy as np
+
+arr1=np.array([[1,2,3],[4,5,6]])
+arr2=np.array([[7,8,9],[10,11,12]])
+print(arr1+arr2 ,"\n")
+
+print(arr1-arr2 ,"\n")
+
+print(arr1*arr2 ,"\n")
+
+print(arr2//arr1 ,"\n")
+
+print(arr2**arr1 ,"\n")
+
+Ques3:
+import numpy as np
+arr=np.array([i for i in range(1,101)])
+
+primes=[]
+
+for num in arr:
+    if num>1:
+        is_prime=True
+        for i in range(2,int(num**(0.5)+1)):
+            if num%i==0:
+                is_prime=False
+                break
+        if is_prime:
+            primes.append(int(num))
+                
+                
+print(primes)
+
+Ques4:
+import numpy as np
+
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+
+
+print("1D array:", arr1)
+print("First element:", arr1[0])
+print("Last element:", arr1[-1])
+print("Slice 1 to 4:", arr1[1:5])
+print("Every other element:", arr1[::2])
+print("Reversed array:", arr1[::-1])
+
+Ques5:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Frames</title>
+</head>
+
+<frameset cols="50%,50%">
+  <
+  <frame src="left.html" name="leftFrame" />
+
+  <frameset rows="50%,50%">
+    <frame src="topright.html" name="topRightFrame" />
+
+    <frameset cols="50%,50%">
+      <frame src="bottomright.html" name="bottomRightLeftFrame" />
+      <frame src="bottomright.html" name="bottomRightRightFrame" />
+    </frameset>
+  </frameset>
+</frameset>
+
+</html>
