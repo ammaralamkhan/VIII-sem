@@ -1,1 +1,125 @@
+ques:1
+import pandas as pd
 
+df = pd.read_csv("your_data.csv")
+
+print(df.isnull().sum())
+print('\n')                
+print((df.isnull().sum()/len(df))*100)
+
+Ques:2
+import pandas as pd
+import numpy as np
+
+data = {
+    "Name": ["Aman", "Riya", "John", "Sara", "Raj", "Priya"],
+    "Age": [25, None, 30, 22, None, 28],
+    "Salary": [50000, 60000, None, 45000, 52000, None],
+    "City": ["Delhi", "Mumbai", None, "Chennai", "Delhi", None]
+}
+
+df = pd.DataFrame(data)
+
+# Handle missing values
+df["Age"] = df["Age"].fillna(df["Age"].mean())          
+df["Salary"] = df["Salary"].fillna(df["Salary"].median()) 
+df["City"] = df["City"].fillna(df["City"].mode()[0])     
+
+print(df)
+
+Ques :3
+import pandas as pd
+import numpy as np
+
+data = {
+    "Name": ["Aman", "Riya", "John", "Sara", "Raj", "Priya"],
+    "Age": [25, None, 30, 22, None, 28],
+    "Salary": [50000, 60000, None, 45000, 52000, None],
+    "City": ["Delhi", "Mumbai", None, "Chennai", "Delhi", None]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+df.rename(columns={
+    "Name": "Employee_Name",
+    "Age": "Employee_Age",
+    "Salary": "Employee_Salary",
+    "City": "Employee_City"
+}, inplace=True)
+
+print(df)
+
+Ques:4
+
+import pandas as pd
+
+df = pd.DataFrame({
+    "Name": ["Aman","Riya","John","Sara","Raj","Priya"],
+    "Age": [25,None,30,22,None,28],
+    "Salary": [50000,60000,None,45000,52000,51000],
+    "City": ["Delhi","Mumbai",None,"Chennai","Delhi",None]
+})
+
+df.columns = ["Name","Age","Salary","City"]
+
+df["Age"] = df["Age"].fillna(df["Age"].mean())
+df["Salary"] = df["Salary"].fillna(df["Salary"].median())
+df["City"] = df["City"].fillna(df["City"].mode()[0])
+
+df = df.dropna()
+
+df = df[(df.Age < 50) & (df.Salary >= 50000)]
+
+df = df[["Name","Age","Salary","City"]]
+
+print(df)
+
+Ques 5:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Clock</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f0f0f0;
+  }
+  #clock {
+    font-size: 4em;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+
+<div id="clock">00:00:00</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  let h = now.getHours();
+  //console.log(h)
+  let m = now.getMinutes();
+  let s = now.getSeconds();
+
+  const ampm = h >= 12 ? 'PM' : 'AM';
+ // console.log(ampm)
+  h = h % 12 || 12;
+
+  h = String(h).padStart(2, '0');
+  m = String(m).padStart(2, '0');
+  s = String(s).padStart(2, '0');
+
+  document.getElementById('clock').textContent = `${h}:${m}:${s} ${ampm}`;
+}
+
+setInterval(updateClock, 1000);
+updateClock(); 
+</script>
+
+</body>
+</html>
