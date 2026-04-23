@@ -1,1 +1,118 @@
+Ques 1:
+import numpy as np
 
+arr=np.arange(1,21)
+mean=arr.mean()
+print("mean: ",mean)
+
+median=np.median(arr)
+print("meadina: ",median)
+
+std= np.std(arr)
+print("std: ",std)
+
+Qu 2:
+import numpy as np
+
+A= np.array([[1,2,3],
+             [4,5,6]])
+B=np.array([[7,8,9],
+            [10 ,11,12]])
+
+print("Matrix A: ")
+print(A)
+
+print("Matrix B: ")
+print(B)
+
+addition =np.add(A,B)
+print("Add:\n ",addition)
+
+mul=np.multiply(A,B)
+print("Multiplication:\n ",mul)
+
+#dot_product
+B=B.reshape(3,2)
+dot_p=np.dot(A,B)
+print("Dot prod: ",dot_p)
+
+Ques3:
+import numpy as np
+
+#array random
+
+
+arr=np.random.randint(0,100, size=10)
+print("maximum: ",max(arr))
+print("minimum: ", min(arr))
+
+Ques4:
+import numpy as np
+
+arr=np.arange(0,10)
+print("Original array: ",arr)
+
+#different MAtrix size
+
+arr_1=arr.reshape(5,2)
+print(arr_1)
+
+arr_2=arr.reshape(2,5)
+print(arr_2)
+
+Ques 5:
+<html>
+<head>
+    <title>Compose Email</title>
+    <style>
+        body{ font-family: arial ; margin: 40px}
+        table{border-collapse: collapse;}
+        td{padding: 10px;}
+        label{color: blue;font-size:18px;}
+        input[type="button"] {padding: 8px 30px; font-size:16px; font-weight:bold; cursor:pointer;}
+        textarea{width: 350px ; height: 120px; padding: 5px;}
+        input[type="text"] {width: 350px; padding: 5px;}
+    </style>
+</head>
+<body>
+    <h2>Compose Email</h2>
+    <table>
+        <tr>
+            <td><label>To</label></td>
+            <td><input type="text" ></td>
+        </tr>
+        <tr>
+            <td><label>Copy</label></td>
+            <td><input type="text" ></td>
+        </tr>
+        <tr>
+            <td><label>Message</label></td>
+            <td><textarea ></textarea></td>
+            <td><input type="button" value="SEND" onclick="sendEmail()"></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
+Ques 6
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM - Page 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
+        input[type="text"] { padding: 8px; width: 250px; font-size: 16px; }
+        input[type="button"] { padding: 10px 25px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>ABC.COM</h1>
+    <h2>Enter Your Name</h2>
+    <form action="w6q6_page2.html" method="GET">
+        <input type="text" name="username" id="username" placeholder="Enter your name" required><br><br>
+        <input type="submit" value="Enter">
+    </form>
+</body>
+</html>
